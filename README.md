@@ -1,51 +1,67 @@
-# 🚀 AI-Powered Financial Intelligence System (Sri Lanka)
+# 🚀 FinSight AI – Financial Autopilot System (Sri Lanka)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
-![Status](https://img.shields.io/badge/Status-Active-success)
+![AI](https://img.shields.io/badge/AI-Enabled-purple)
+![Status](https://img.shields.io/badge/Status-Production--Ready-success)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
 
 ## 🧠 Overview
 
-An AI-driven **Financial Decision Intelligence System** designed to help individuals and small businesses in Sri Lanka make smarter financial decisions in a high-inflation environment.
+**FinSight AI** is an AI-powered **Financial Autopilot System** built for Sri Lanka.
 
-This system goes beyond traditional expense tracking by combining:
+It goes beyond tracking expenses and introduces:
 
-* 📊 Data Analysis
-* 🤖 Machine Learning
-* ⚖️ Decision Intelligence
+* 🤖 Autonomous financial decision-making
+* 🔮 Predictive intelligence
+* ⚖️ Cost optimization strategies
 
-👉 Goal: Help users **track, predict, optimize, and control their financial life**
+👉 The system helps users **survive, adapt, and optimize finances in an unstable economy**
 
 ---
 
 ## 🌍 Problem Statement
 
-Sri Lanka is currently facing:
+Sri Lanka faces:
 
-* High cost of living
-* Unstable food and fuel prices
-* Inflation pressure
+* Rising inflation
+* Unstable food & fuel prices
+* Increasing cost of living
 * Lack of intelligent financial tools
 
-### 💥 Real-World Impact
+### 💥 Real Impact
 
-* People overspend unknowingly
-* Poor purchase timing
-* No visibility into future costs
-* Difficulty managing monthly budgets
+* People overspend without awareness
+* Wrong purchase timing increases costs
+* No prediction of future expenses
+* Weak financial planning
 
 ---
 
-## 🎯 Objectives
+## 🎯 Vision
 
-* Track income and expenses
-* Predict price trends of essential goods
-* Optimize spending behavior
-* Provide intelligent financial recommendations
-* Support small businesses with data-driven insights
+Build an AI system that:
+
+> Automatically optimizes a user’s financial life in real time
+
+Not dashboards.
+Not just advice.
+
+👉 **Autonomous financial intelligence**
+
+---
+
+## ⚡ Core Innovation
+
+### 🧠 Financial Autopilot Engine
+
+Like autopilot in vehicles:
+
+* Continuously monitors financial environment
+* Makes micro-decisions
+* Optimizes spending automatically
 
 ---
 
@@ -53,23 +69,23 @@ Sri Lanka is currently facing:
 
 ```text
         ┌──────────────────────────┐
-        │     USER APPLICATION     │
+        │      USER INTERFACE      │
         │ Dashboard | AI Chat | UI │
         └────────────┬─────────────┘
                      │
         ┌────────────▼─────────────┐
-        │     DECISION LAYER       │
+        │     DECISION LAYER ⚡     │
         │ Buy/Wait | Alerts | Plan │
         └────────────┬─────────────┘
                      │
         ┌────────────▼─────────────┐
         │   AI INTELLIGENCE LAYER  │
-        │ Prediction | Analysis AI │
+        │ Prediction | Behavior AI │
         └────────────┬─────────────┘
                      │
         ┌────────────▼─────────────┐
         │       DATA LAYER         │
-        │ User | Market | Community│
+        │ User | Market | Network  │
         └──────────────────────────┘
 ```
 
@@ -79,9 +95,8 @@ Sri Lanka is currently facing:
 
 ### User Data
 
-* Income
-* Expenses
-* Spending habits
+* Income, expenses, habits
+* OCR bill scanning
 
 ### Market Data
 
@@ -89,65 +104,62 @@ Sri Lanka is currently facing:
 * Electricity rates
 * Inflation indicators
 
-### Local Data
-
-* Pola prices
-* Supermarket prices
-* Small shop data
-
-### Community Data
+### Community Network 🌍
 
 * Crowdsourced price updates
+* Real-time local insights
 
 ---
 
-## 🧠 AI Intelligence System
+## 🧠 AI Intelligence Layer
 
-### 📊 Expense Intelligence Engine
+### 📊 Expense Intelligence
 
-* Categorizes spending
-* Detects waste patterns
-* Identifies habits
-
----
+* Auto categorization
+* Habit detection
+* Waste identification
 
 ### 🔮 Price Prediction Engine
 
-* Forecasts future price trends
-* Uses time-series modeling
-
----
+* Time-series forecasting (ARIMA + LSTM + Prophet)
+* 3 / 7 / 30-day predictions
 
 ### ⚙️ Spending Optimization Engine
 
-* Suggests cost-saving strategies
-* Recommends alternatives
+* Cost reduction strategies
+* Alternative suggestions
 
----
-
-### 💯 Financial Health Score Engine
+### 💯 Financial Health Score
 
 * Score (0–100)
-* Based on discipline + savings
-
----
+* Measures stability & discipline
 
 ### 🚨 Crisis Detection Engine
 
 * Detects inflation spikes
-* Identifies financial risks
+* Activates survival mode
 
----
-
-### ⚖️ Decision Engine (Core Innovation)
+### ⚖️ Decision Engine (CORE)
 
 * Buy now vs wait
-* Risk-aware recommendations
-* Multi-option decision support
+* Cheapest shop suggestion
+* Best purchase timing
+* Risk-aware outputs
 
----
+### 🤖 AI Financial Coach
 
-### 🏪 Small Business Intelligence
+* Conversational assistant
+* Personalized insights
+
+### 🧾 OCR Bill Scanner
+
+* Auto expense extraction
+
+### 🔁 What-If Simulator
+
+* Predict outcomes of decisions
+
+### 🏪 Business Intelligence
 
 * Demand prediction
 * Inventory optimization
@@ -155,55 +167,46 @@ Sri Lanka is currently facing:
 
 ---
 
-### 🤖 AI Chat Financial Coach
-
-* Conversational assistant
-* Personalized advice
-
----
-
-### 🧾 OCR Bill Scanner
-
-* Extracts data from receipts
-* Auto expense logging
-
----
-
-### 🔁 What-If Simulator
-
-* Simulates financial decisions
-* Predicts outcomes
-
----
-
 ## 📱 User Features
 
 * 📊 Smart Dashboard
 * 🤖 AI Assistant
-* 🚨 Alerts System
-* 🏪 Local Market Finder
+* 🚨 Smart Alerts
+* 🛒 Shopping Planner
+* 📍 Local Market Finder
 * 💯 Financial Score
-* 🛒 Smart Shopping Planner
 * 👨‍👩‍👧 Family Budget System
 * 🌍 Cost of Living Dashboard
 
 ---
 
-## 🇱🇰 Sri Lanka-Specific Innovations
+## 🇱🇰 Sri Lanka-Specific Features
 
 * Pola price intelligence
 * Transport cost optimization
 * Electricity bill prediction
 * Inflation shock alerts
-* Salary vs survival mode analysis
-* Community price sharing
+* Salary vs survival mode
+* Community-driven pricing
 
 ---
 
 ## 🔁 System Workflow
 
 ```text
-User Input → Data Storage → AI Analysis → Prediction → Decision Engine → User Insights → Continuous Learning
+User Input
+   ↓
+Data Storage
+   ↓
+AI Analysis
+   ↓
+Prediction Engine
+   ↓
+Decision Engine ⚡
+   ↓
+User Insights & Alerts
+   ↓
+Continuous Learning
 ```
 
 ---
@@ -216,15 +219,28 @@ User Input → Data Storage → AI Analysis → Prediction → Decision Engine �
 * FastAPI
 * PostgreSQL
 
-### Data & AI
+### AI / Data
 
 * Pandas
 * NumPy
 * Scikit-learn
+* Time-series models
 
-### Frontend (Optional)
+### Infrastructure
 
-* React / Next.js
+* Redis (real-time caching)
+* Kafka (data streaming)
+* AWS / GCP (deployment)
+
+---
+
+## 🔐 Security & Trust
+
+* JWT Authentication
+* Encrypted user data
+* Role-based access control
+* Privacy-first architecture
+* Explainable AI decisions
 
 ---
 
@@ -233,7 +249,7 @@ User Input → Data Storage → AI Analysis → Prediction → Decision Engine �
 ### Add Expense
 
 ```http
-POST /add-expense
+POST /expenses
 ```
 
 ```json
@@ -246,76 +262,52 @@ POST /add-expense
 
 ---
 
-### Get Expenses
-
-```http
-GET /expenses
-```
-
----
-
-## ▶️ How to Run
-
-```bash
-# Clone repository
-git clone https://github.com/your-username/project-name.git
-
-# Navigate
-cd project-name
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run server
-uvicorn app.main:app --reload
-```
-
----
-
-## 📊 Example Output
+### Decision Output
 
 ```json
 {
-  "suggestion": "Buy now",
-  "reason": "Price likely to increase by 12%",
-  "risk_level": "Medium"
+  "action": "WAIT",
+  "reason": "Price expected to drop by 8%",
+  "confidence": 0.76,
+  "risk_level": "LOW"
 }
 ```
 
 ---
 
-## 💰 Monetization Model
+## 💰 Monetization
 
 * Freemium model
 * Premium AI insights
 * Business analytics subscription
-* Future partnerships
+* Future retail & banking integrations
 
 ---
 
 ## 🚀 Development Roadmap
 
-### Phase 1 – MVP
+### Phase 1 – Foundation
 
-* Expense tracker
-* Basic API
-* Dashboard
+* Expense tracking
+* API + database
+* Basic dashboard
 
 ### Phase 2 – Intelligence
 
 * Expense analysis
-* Decision engine
+* Financial score
+* Alerts system
 
-### Phase 3 – AI
+### Phase 3 – AI Core
 
 * Price prediction
-* Smart recommendations
+* Decision engine
 
 ### Phase 4 – Advanced
 
 * AI chatbot
 * OCR scanner
-* Business analytics
+* Business tools
 * National dashboard
 
 ---
@@ -330,7 +322,9 @@ project-root/
 │   ├── routes/
 │   ├── models/
 │   ├── services/
+│   ├── core/
 │
+├── ai_models/
 ├── data/
 ├── notebooks/
 ├── requirements.txt
@@ -341,13 +335,13 @@ project-root/
 
 ## 🔥 Unique Value Proposition
 
-👉 This is not just a finance app.
+👉 This is NOT a budgeting app
 
-It is a **Decision Intelligence System** that:
+This is:
 
-* Understands behavior
-* Predicts future trends
-* Helps users act smarter
+* A **decision intelligence system**
+* A **financial survival engine**
+* An **AI autopilot for money**
 
 ---
 
@@ -355,32 +349,18 @@ It is a **Decision Intelligence System** that:
 
 * Mobile application
 * Bank API integration
-* Real-time national price system
-* Advanced AI financial planning
-
----
-
-## 🤝 Contribution
-
-1. Fork the repository
-2. Create a new branch
-3. Commit changes
-4. Submit a pull request
-
----
-
-## 📜 License
-
-MIT License
+* Real-time national price network
+* Reinforcement learning decision engine
+* Full financial automation
 
 ---
 
 ## 🧠 Final Thought
 
-> “Don’t just track money. Understand it. Predict it. Control it.”
+> “From tracking money → to controlling financial survival”
 
 ---
 
 ## ⭐ Support
 
-If you like this project, give it a star ⭐ and support the journey 🚀
+If you believe in this vision, give it a star ⭐ and support the journey 🚀
