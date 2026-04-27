@@ -23,3 +23,13 @@ def init_db() -> None:
             )
             """
         )
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS incomes (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                amount REAL NOT NULL,
+                source TEXT NOT NULL,
+                created_at TEXT NOT NULL
+            )
+            """
+        )
