@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 from app.api.routes.expenses import router as expenses_router
+from app.api.routes.incomes import router as incomes_router
 from app.db import init_db
 
 app = FastAPI(title="FinSight AI", version="0.1.0")
@@ -17,3 +18,4 @@ def health() -> dict:
 
 
 app.include_router(expenses_router)
+app.include_router(incomes_router)
