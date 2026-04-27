@@ -1,25 +1,46 @@
 from datetime import datetime, timezone
 
+from app.db import get_connection
 from app.schemas.expense import Expense, ExpenseCreate
-
-_expenses: list[Expense] = []
-_next_id = 1
 
 
 def create_expense(payload: ExpenseCreate) -> Expense:
-    global _next_id
+    created_at = datetime.now(timezone.utc)
 
-    expense = Expense(
-        id=_next_id,
+    with get_connection() as conn:
+        cur = conn.execute(
+            """
+            INSERT INTO expenses (amount, category, created_at)
+            VALUES (?, ?, ?)
+            """,
+            (payload.amount, payload.category, created_at.isoformat()),
+        )
+        expense_id = int(cur.lastrowid)
+
+    return Expense(
+        id=expense_id,
         amount=payload.amount,
         category=payload.category,
-        created_at=datetime.now(timezone.utc),
+        created_at=created_at,
     )
-
-    _next_id += 1
-    _expenses.append(expense)
-    return expense
 
 
 def list_expenses() -> list[Expense]:
-    return _expenses
+    with get_connection() as conn:
+        rows = conn.execute(
+            """
+            SELECT id, amount, category, created_at
+            FROM expenses
+            ORDER BY id DESC
+            """
+        ).fetchall()
+
+    return [
+        Expense(
+            id=int(row["id"]),
+            amount=float(row["amount"]),
+            category=str(row["category"]),
+            created_at=datetime.fromisoformat(str(row["created_at"])),
+        )
+        for row in rows
+    ]
