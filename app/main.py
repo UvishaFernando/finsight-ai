@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 from app.api.routes.alerts import router as alerts_router
+from app.api.routes.decision import router as decision_router
 from app.api.routes.expenses import router as expenses_router
 from app.api.routes.incomes import router as incomes_router
 from app.api.routes.insights import router as insights_router
@@ -27,3 +28,4 @@ app.include_router(summary_router)
 app.include_router(insights_router)
 app.include_router(alerts_router)
 app.include_router(score_router)
+app.include_router(decision_router)
