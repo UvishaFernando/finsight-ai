@@ -1,5 +1,10 @@
 from fastapi import APIRouter
 
+from app.intelligence.expense_categorizer import suggest_category
+from app.schemas.categorization import (
+    CategorySuggestionRequest,
+    CategorySuggestionResponse,
+)
 from app.schemas.expense import Expense, ExpenseCreate
 from app.services.expenses import create_expense, list_expenses
 
@@ -14,3 +19,10 @@ def post_expense(payload: ExpenseCreate) -> Expense:
 @router.get("", response_model=list[Expense])
 def get_expenses() -> list[Expense]:
     return list_expenses()
+
+
+@router.post("/suggest-category", response_model=CategorySuggestionResponse)
+def suggest_expense_category(
+    payload: CategorySuggestionRequest,
+) -> CategorySuggestionResponse:
+    return CategorySuggestionResponse(category=suggest_category(payload.text))
