@@ -6,7 +6,8 @@ from app.schemas.categorization import (
     CategorySuggestionResponse,
 )
 from app.schemas.expense import Expense, ExpenseCreate
-from app.services.expenses import create_expense, list_expenses
+from app.schemas.expense_auto import ExpenseAutoCreate
+from app.services.expenses import create_expense, create_expense_auto, list_expenses
 
 router = APIRouter(prefix="/expenses", tags=["expenses"])
 
@@ -14,6 +15,11 @@ router = APIRouter(prefix="/expenses", tags=["expenses"])
 @router.post("", response_model=Expense)
 def post_expense(payload: ExpenseCreate) -> Expense:
     return create_expense(payload)
+
+
+@router.post("/auto", response_model=Expense)
+def post_expense_auto(payload: ExpenseAutoCreate) -> Expense:
+    return create_expense_auto(payload)
 
 
 @router.get("", response_model=list[Expense])

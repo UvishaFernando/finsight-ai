@@ -23,6 +23,15 @@ def init_db() -> None:
             )
             """
         )
+        # Lightweight migration for early development:
+        # add 'description' column if the table already exists without it.
+        cols = {
+            row["name"]
+            for row in conn.execute("PRAGMA table_info(expenses)").fetchall()
+        }
+        if "description" not in cols:
+            conn.execute("ALTER TABLE expenses ADD COLUMN description TEXT")
+
         conn.execute(
             """
             CREATE TABLE IF NOT EXISTS incomes (
