@@ -255,12 +255,17 @@ POST /expenses
 ```json
 {
   "amount": 500,
-  "category": "food",
-  "date": "2026-04-22"
+  "category": "food"
 }
 ```
 
 ---
+
+### List Expenses
+
+```http
+GET /expenses
+```
 
 ### Decision Output
 
@@ -364,4 +369,3 @@ This is:
 ## ⭐ Support
 
 If you believe in this vision, give it a star ⭐ and support the journey 🚀
->>>>>>> b12d4f6f7b5f83dfb8d2b0b14741f48c590856d5

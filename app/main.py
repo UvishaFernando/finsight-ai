@@ -38,3 +38,8 @@ def create_expense(payload: ExpenseCreate) -> Expense:
     _next_id += 1
     _expenses.append(expense)
     return expense
+
+
+@app.get("/expenses", response_model=list[Expense])
+def list_expenses() -> list[Expense]:
+    return _expenses
