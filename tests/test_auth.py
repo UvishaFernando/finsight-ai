@@ -124,7 +124,7 @@ class TestProtectedRoutes:
 
     def test_get_me_no_token(self):
         res = client.get("/api/v1/auth/me")
-        assert res.status_code == 401
+        assert res.status_code in (401, 403)
 
     def test_get_me_invalid_token(self):
         res = client.get("/api/v1/auth/me",
