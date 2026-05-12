@@ -18,29 +18,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title=settings.APP_NAME,
-    version=settings.APP_VERSION,
-    description="""
-## FinSight AI — Sri Lanka Financial Intelligence System
-
-An AI-powered personal finance platform built specifically for Sri Lanka.
-
-### Features (MVP)
-- 🔐 JWT Authentication with bcrypt password hashing
-- 💸 Expense tracking with auto-categorization
-- 📊 Financial health score (0–100)
-- 🚨 Smart alerts for overspending
-- 🇱🇰 Sri Lanka market price dashboard
-
-### Auth Flow
-1. `POST /api/v1/auth/register` — create account
-2. `POST /api/v1/auth/login` — get access + refresh tokens
-3. Add `Authorization: Bearer <access_token>` to all protected requests
-4. `POST /api/v1/auth/refresh` — get new access token when expired
-    """,
-    docs_url="/docs",
-    redoc_url="/redoc",
-    lifespan=lifespan,
-)
+    version=settings.APP_VERSION)
 
 app.add_middleware(
     CORSMiddleware,
