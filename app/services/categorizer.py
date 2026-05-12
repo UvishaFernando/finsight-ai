@@ -185,7 +185,7 @@ def categorize(description: str) :
     tokens = set(cleaned.split())
 
     best_match: Optional[CategorizationResult] = None
-
+    
     for category, tx_type, keywords, base_confidence in KEYWORD_MAP:
         for keyword in keywords:
             kw_clean = _clean_text(keyword)
